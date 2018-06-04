@@ -3,7 +3,7 @@ var games = ["Final Fantasy VII", "The Witcher", "League of Legends", "Banjo-Kaz
 
 function displayGameInfo() {
 var game = $(this).attr("data-name");
-var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + game + "&api_key=kWSeR23xjNTajEuvZtpJ7hnSTQeQTyk6&limit=10";
+var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + game + "&api_key=kWSeR23xjNTajEuvZtpJ7hnSTQeQTyk6&limit=10";
 $.ajax({
     url: queryURL,
     method: "GET"
