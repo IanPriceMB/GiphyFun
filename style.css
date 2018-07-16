@@ -1,0 +1,9 @@
+body, html{
+    background-color: black;
+    color: azure;
+    width: 100%;
+    height: 100%;
+}
+.game-btn {
+    margin: 6px;
+}

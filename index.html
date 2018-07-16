@@ -4,23 +4,63 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
-            <link rel="stylesheet" type="text/css" href="style.css" />
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" 
+            integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" 
+            crossorigin="anonymous">
             <script type="text/javascript" src="scripts.js"></script>
+            <link rel="stylesheet" type="text/css" href="style.css" />
             <title>Giphy Fun</title>
     </head>
-    <body><form id="gameForm">
-            <label for="gameInput">Add a Game Bro:</label>
-            <input type="text" id="gameInput">
-            <br>
-
-            <input id="addGame" type="submit" value="Add a Game Bro">
-        </form>
-        <div class="buttonLanding">
-
+    <body>
+        <header class="container-fluid">
+            <div class="row justify-content-center">
+                <h1 class="col-3">
+                    Fun with Giphy!!
+                </h1>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row justify-content-center">
+                <form class="col-md-6 col-sm-12" id="gameForm">
+                    <div class="form-group">
+                        <label for="gameInput">Add a Game Bro:</label>
+                        <input type="text" class="form-control" placeholder="Kingdom Hearts" id="gameInput">
+                    </div>
+                    <input id="addGame" type="submit" class="btn btn-primary" value="Add a Game Bro">
+                </form>
+                    <div class="col-md-6 col-sm-12 buttonLanding">
+                    <!-- buttons go here -->
+                    </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-12">
+                    Click on an image to toggle between still and animated gif modes!
+                </div>
+            </div>
+            
         </div>
-        <div class="imageLanding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container col-md-6 col-sm-12">
+                    <div class="row justify-content-center">
+                        <div class="col-md-9 col-sm-12" id="imageLanding1">
 
+                        </div>
+                    </div>
+                </div>
+                <div class="container col-md-6 col-sm-12">
+                    <div class="row justify-content-center">
+                        <div class="col-md-9 col-sm-12" id="imageLanding2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>   
     </body>
 </html>
